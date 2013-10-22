@@ -15,7 +15,6 @@
 		5591A1B01816EA5600095AB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A1AF1816EA5600095AB5 /* UIKit.framework */; };
 		5591A1B31816EA5600095AB5 /* libExampleRestAdapterLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A19B1816EA5500095AB5 /* libExampleRestAdapterLib.a */; };
 		5591A1B91816EA5600095AB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5591A1B71816EA5600095AB5 /* InfoPlist.strings */; };
-		5591A1BB1816EA5600095AB5 /* ExampleRestAdapterLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5591A1BA1816EA5600095AB5 /* ExampleRestAdapterLibTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		5591A1AF1816EA5600095AB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5591A1B61816EA5600095AB5 /* ExampleRestAdapterLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleRestAdapterLibTests-Info.plist"; sourceTree = "<group>"; };
 		5591A1B81816EA5600095AB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5591A1BA1816EA5600095AB5 /* ExampleRestAdapterLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleRestAdapterLibTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +126,6 @@
 		5591A1B41816EA5600095AB5 /* ExampleRestAdapterLibTests */ = {
 			isa = PBXGroup;
 			children = (
-				5591A1BA1816EA5600095AB5 /* ExampleRestAdapterLibTests.m */,
 				5591A1B51816EA5600095AB5 /* Supporting Files */,
 			);
 			path = ExampleRestAdapterLibTests;
@@ -232,7 +229,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5591A1BB1816EA5600095AB5 /* ExampleRestAdapterLibTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
