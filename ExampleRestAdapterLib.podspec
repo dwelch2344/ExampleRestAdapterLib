@@ -8,5 +8,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/dwelch2344/ExampleRestAdapterLib.git", :tag => "0.0.1" }
   s.source_files = 'Classes', 'Classes/**/*.{h,m}', 'ExampleRestAdapterLib/**/*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
+  s.framework     = 'XCTest', 'Foundation'
   s.requires_arc = true
 end
