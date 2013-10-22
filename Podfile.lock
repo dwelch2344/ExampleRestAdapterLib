@@ -1,0 +1,14 @@
+PODS:
+  - ExampleCoreLib (0.0.1)
+
+DEPENDENCIES:
+  - ExampleCoreLib (from `https://github.com/dwelch2344/ExampleCoreLib`)
+
+EXTERNAL SOURCES:
+  ExampleCoreLib:
+    :git: https://github.com/dwelch2344/ExampleCoreLib
+
+SPEC CHECKSUMS:
+  ExampleCoreLib: b05b9db0341c04742ac0dfb3c07f15f1833f315f
+
+COCOAPODS: 0.20.2

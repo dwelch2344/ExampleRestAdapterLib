@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.exclude_files = 'Classes/Exclude'
   s.framework     = 'XCTest', 'Foundation'
   s.requires_arc = true
+  s.dependency 'ExampleCoreLib'
 end

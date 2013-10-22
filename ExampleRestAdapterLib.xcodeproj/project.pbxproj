@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0F0DE9D0334533A8348B88 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0EFA6349A14C5C956F9833 /* libPods.a */; };
 		5591A19F1816EA5500095AB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A19E1816EA5500095AB5 /* Foundation.framework */; };
 		5591A1A41816EA5500095AB5 /* ExampleRestAdapterLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5591A1A31816EA5500095AB5 /* ExampleRestAdapterLib.h */; };
 		5591A1A61816EA5500095AB5 /* ExampleRestAdapterLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5591A1A51816EA5500095AB5 /* ExampleRestAdapterLib.m */; };
@@ -14,6 +15,7 @@
 		5591A1AE1816EA5600095AB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A19E1816EA5500095AB5 /* Foundation.framework */; };
 		5591A1B01816EA5600095AB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A1AF1816EA5600095AB5 /* UIKit.framework */; };
 		5591A1B31816EA5600095AB5 /* libExampleRestAdapterLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A19B1816EA5500095AB5 /* libExampleRestAdapterLib.a */; };
+		5591A1C618172A0500095AB5 /* RestfulFooService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5591A1C518172A0500095AB5 /* RestfulFooService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		5591A1AB1816EA5600095AB5 /* ExampleRestAdapterLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleRestAdapterLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5591A1AC1816EA5600095AB5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5591A1AF1816EA5600095AB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5591A1C418172A0500095AB5 /* RestfulFooService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestfulFooService.h; sourceTree = "<group>"; };
+		5591A1C518172A0500095AB5 /* RestfulFooService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestfulFooService.m; sourceTree = "<group>"; };
+		8F4F49F26A354FFBB7D1DC13 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		DB0EFA6349A14C5C956F9833 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5591A19F1816EA5500095AB5 /* Foundation.framework in Frameworks */,
+				1B0F0DE9D0334533A8348B88 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,7 @@
 				5591A1A01816EA5500095AB5 /* ExampleRestAdapterLib */,
 				5591A19D1816EA5500095AB5 /* Frameworks */,
 				5591A19C1816EA5500095AB5 /* Products */,
+				8F4F49F26A354FFBB7D1DC13 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +105,7 @@
 				5591A19E1816EA5500095AB5 /* Foundation.framework */,
 				5591A1AC1816EA5600095AB5 /* XCTest.framework */,
 				5591A1AF1816EA5600095AB5 /* UIKit.framework */,
+				DB0EFA6349A14C5C956F9833 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +116,8 @@
 				5591A1A31816EA5500095AB5 /* ExampleRestAdapterLib.h */,
 				5591A1A51816EA5500095AB5 /* ExampleRestAdapterLib.m */,
 				5591A1A11816EA5500095AB5 /* Supporting Files */,
+				5591A1C418172A0500095AB5 /* RestfulFooService.h */,
+				5591A1C518172A0500095AB5 /* RestfulFooService.m */,
 			);
 			path = ExampleRestAdapterLib;
 			sourceTree = "<group>";
@@ -126,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5591A1BE1816EA5600095AB5 /* Build configuration list for PBXNativeTarget "ExampleRestAdapterLib" */;
 			buildPhases = (
+				E199692A6BF348A0B85E1125 /* Check Pods Manifest.lock */,
 				5591A1971816EA5500095AB5 /* Sources */,
 				5591A1981816EA5500095AB5 /* Frameworks */,
 				5591A1991816EA5500095AB5 /* CopyFiles */,
+				3592C8C139F74308A0F6660E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,11 +207,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3592C8C139F74308A0F6660E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		E199692A6BF348A0B85E1125 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5591A1971816EA5500095AB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5591A1C618172A0500095AB5 /* RestfulFooService.m in Sources */,
 				5591A1A61816EA5500095AB5 /* ExampleRestAdapterLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +338,7 @@
 		};
 		5591A1BF1816EA5600095AB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F4F49F26A354FFBB7D1DC13 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/ExampleRestAdapterLib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -305,6 +351,7 @@
 		};
 		5591A1C01816EA5600095AB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F4F49F26A354FFBB7D1DC13 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/ExampleRestAdapterLib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -372,6 +419,7 @@
 				5591A1C01816EA5600095AB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5591A1C11816EA5600095AB5 /* Build configuration list for PBXNativeTarget "ExampleRestAdapterLibTests" */ = {
 			isa = XCConfigurationList;
@@ -380,6 +428,7 @@
 				5591A1C31816EA5600095AB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
