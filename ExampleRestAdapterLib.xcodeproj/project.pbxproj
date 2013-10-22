@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1B0F0DE9D0334533A8348B88 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0EFA6349A14C5C956F9833 /* libPods.a */; };
 		5591A19F1816EA5500095AB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A19E1816EA5500095AB5 /* Foundation.framework */; };
-		5591A1A41816EA5500095AB5 /* ExampleRestAdapterLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5591A1A31816EA5500095AB5 /* ExampleRestAdapterLib.h */; };
-		5591A1A61816EA5500095AB5 /* ExampleRestAdapterLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5591A1A51816EA5500095AB5 /* ExampleRestAdapterLib.m */; };
 		5591A1AD1816EA5600095AB5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A1AC1816EA5600095AB5 /* XCTest.framework */; };
 		5591A1AE1816EA5600095AB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A19E1816EA5500095AB5 /* Foundation.framework */; };
 		5591A1B01816EA5600095AB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A1AF1816EA5600095AB5 /* UIKit.framework */; };
@@ -35,7 +33,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				5591A1A41816EA5500095AB5 /* ExampleRestAdapterLib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +42,6 @@
 		5591A19B1816EA5500095AB5 /* libExampleRestAdapterLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libExampleRestAdapterLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5591A19E1816EA5500095AB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5591A1A21816EA5500095AB5 /* ExampleRestAdapterLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExampleRestAdapterLib-Prefix.pch"; sourceTree = "<group>"; };
-		5591A1A31816EA5500095AB5 /* ExampleRestAdapterLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleRestAdapterLib.h; sourceTree = "<group>"; };
-		5591A1A51816EA5500095AB5 /* ExampleRestAdapterLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleRestAdapterLib.m; sourceTree = "<group>"; };
 		5591A1AB1816EA5600095AB5 /* ExampleRestAdapterLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleRestAdapterLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5591A1AC1816EA5600095AB5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5591A1AF1816EA5600095AB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -113,8 +108,6 @@
 		5591A1A01816EA5500095AB5 /* ExampleRestAdapterLib */ = {
 			isa = PBXGroup;
 			children = (
-				5591A1A31816EA5500095AB5 /* ExampleRestAdapterLib.h */,
-				5591A1A51816EA5500095AB5 /* ExampleRestAdapterLib.m */,
 				5591A1A11816EA5500095AB5 /* Supporting Files */,
 				5591A1C418172A0500095AB5 /* RestfulFooService.h */,
 				5591A1C518172A0500095AB5 /* RestfulFooService.m */,
@@ -244,7 +237,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5591A1C618172A0500095AB5 /* RestfulFooService.m in Sources */,
-				5591A1A61816EA5500095AB5 /* ExampleRestAdapterLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
