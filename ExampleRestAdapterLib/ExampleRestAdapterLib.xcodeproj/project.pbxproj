@@ -14,7 +14,6 @@
 		5591A1AE1816EA5600095AB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A19E1816EA5500095AB5 /* Foundation.framework */; };
 		5591A1B01816EA5600095AB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A1AF1816EA5600095AB5 /* UIKit.framework */; };
 		5591A1B31816EA5600095AB5 /* libExampleRestAdapterLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5591A19B1816EA5500095AB5 /* libExampleRestAdapterLib.a */; };
-		5591A1B91816EA5600095AB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5591A1B71816EA5600095AB5 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +48,6 @@
 		5591A1AB1816EA5600095AB5 /* ExampleRestAdapterLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleRestAdapterLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5591A1AC1816EA5600095AB5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5591A1AF1816EA5600095AB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5591A1B61816EA5600095AB5 /* ExampleRestAdapterLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleRestAdapterLibTests-Info.plist"; sourceTree = "<group>"; };
-		5591A1B81816EA5600095AB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				5591A1A01816EA5500095AB5 /* ExampleRestAdapterLib */,
-				5591A1B41816EA5600095AB5 /* ExampleRestAdapterLibTests */,
 				5591A19D1816EA5500095AB5 /* Frameworks */,
 				5591A19C1816EA5500095AB5 /* Products */,
 			);
@@ -119,23 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				5591A1A21816EA5500095AB5 /* ExampleRestAdapterLib-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5591A1B41816EA5600095AB5 /* ExampleRestAdapterLibTests */ = {
-			isa = PBXGroup;
-			children = (
-				5591A1B51816EA5600095AB5 /* Supporting Files */,
-			);
-			path = ExampleRestAdapterLibTests;
-			sourceTree = "<group>";
-		};
-		5591A1B51816EA5600095AB5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5591A1B61816EA5600095AB5 /* ExampleRestAdapterLibTests-Info.plist */,
-				5591A1B71816EA5600095AB5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -210,7 +189,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5591A1B91816EA5600095AB5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,17 +219,6 @@
 			targetProxy = 5591A1B11816EA5600095AB5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5591A1B71816EA5600095AB5 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5591A1B81816EA5600095AB5 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5591A1BC1816EA5600095AB5 /* Debug */ = {
